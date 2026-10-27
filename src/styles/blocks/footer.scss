@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1d1d1d;
+  position: relative;
+  height: auto;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+    @include on-tablet {
+      height: 480px;
+    }
+
+    @include on-desktop {
+      height: 555px;
+    }
+  }
+}
