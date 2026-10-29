@@ -10,7 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>My Bike</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon.png"
+    />
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -332,31 +337,39 @@
             <h2 class="section-title">Contact us</h2>
             <div class="contacts__wrapper">
               <div class="contacts__content">
-                <form class="contacts__input">
+                <form
+                  class="contacts__input"
+                  onsubmit="this.reset(); return false;"
+                >
                   <input
                     class="input input__name"
                     type="text"
+                    name="name"
                     placeholder="Name"
                     title="Name"
                     required
                   />
+
                   <input
                     class="input input__email"
                     type="email"
+                    name="email"
                     placeholder="Email"
                     title="Email"
                     required
                   />
+
                   <textarea
                     class="input input__message"
-                    type="text"
-                    name="Message"
+                    name="message"
                     placeholder="Message"
+                    title="Message"
                     required
                   ></textarea>
+
                   <button
                     class="contacts__button"
-                    type="reset"
+                    type="submit"
                   >
                     Send
                   </button>

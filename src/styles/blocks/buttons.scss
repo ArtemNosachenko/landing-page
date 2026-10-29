@@ -13,6 +13,18 @@
     line-height: 27px;
     cursor: pointer;
 
+    transition:
+      background-color 0.3s ease,
+      transform 0.1s ease;
+
+    &:hover {
+      background-color: #575757;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
     @include on-tablet {
       width: 392px;
       height: 56px;

@@ -28,24 +28,28 @@
 
 .phone-tooltip {
   position: absolute;
-  bottom: -38px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: calc(100% + 12px);
+  transform: translate(8px, -50%);
 
   color: #fff;
-
-  padding: 6px 10px;
-  border-radius: 6px;
-
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
   white-space: nowrap;
 
   opacity: 0;
-  pointer-events: none;
+  visibility: hidden;
 
-  transition: opacity 0.25s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
-.phone:hover .phone-tooltip {
+.phone:hover .phone-tooltip,
+.phone:focus-visible .phone-tooltip {
   opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
 }

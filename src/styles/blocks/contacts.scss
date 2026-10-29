@@ -51,7 +51,7 @@
       line-height: 140%;
       text-decoration: none;
       &:hover {
-        color: #f60;
+        color: #575757;
       }
       &:focus,
       &:active,
@@ -71,13 +71,18 @@
     color: #1d1d1d;
     border: transparent;
     border-radius: 40px;
+    cursor: pointer;
+
+    transition:
+      background-color 0.3s ease,
+      transform 0.1s ease;
+
     &:hover {
-      background-color: #e8e8f0;
-      color: #1d1d1d;
+      background-color: #575757;
     }
+
     &:active {
-      background-color: #e8e8f0;
-      color: #1d1d1d;
+      transform: scale(0.98);
     }
   }
 }
